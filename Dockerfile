@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 # also use "npm ci"
 COPY package*.json ./
 RUN npm install
-
+RUN npm i -g server
 # Copy over the source code
 COPY . .
 
